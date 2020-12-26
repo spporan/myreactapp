@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+
 import FC from './components/FunctionalComp';
 import {FirstComponentCls,SecondComponentCls} from "./components/ComponentClass";
 import  Click  from "./components/click";
-import Counter  from './components/Counter'
+import Counter  from './components/Counter';
+import ParentComp from './components/ParentComp'
 function App() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
       <SecondComponentCls></SecondComponentCls>
       <Click/>  
       <Counter/>
+      <ParentComp/>
     </div>
   );
 }
