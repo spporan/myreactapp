@@ -18,7 +18,7 @@ export default class Counter extends Component {
         const {count}=this.state
         return (
             <div>
-                <button onMouseMove={
+                <button onMouseMove ={
                     this.IncrementCount
                 }>Increamnted to count {count} </button>
             </div>
