@@ -1,6 +1,6 @@
 
 import React ,{Component} from 'react'
-
+import UpdateedComp from "./HigherOrderComp";
 
 export class Click extends Component{
 constructor(props){
@@ -19,9 +19,9 @@ constructor(props){
     render(){
         const {count}=this.state;
         return( <di>
-            <button onClick={this.UpdateCount}>Click {count} times</button>
+            <button onClick={this.UpdateCount}>{this.props.name} UpdateedCompClick {count} times</button>
              </di>);
     }
 }
 
-export default Click
+export default UpdateedComp(Click)

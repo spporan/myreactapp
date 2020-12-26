@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import FC from './components/FunctionalComp';
 import {FirstComponentCls,SecondComponentCls} from "./components/ComponentClass";
-import  { Click } from "./components/click";
+import  Click  from "./components/click";
 import Counter  from './components/Counter'
 function App() {
   return (
