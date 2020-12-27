@@ -7,12 +7,12 @@ import ParentComp from './components/ParentComp'
 function App() {
   return (
     <div className="App">
-      <h1>
-        Hello from React world
-      </h1>
-      <FC></FC>
-      <FirstComponentCls></FirstComponentCls>
-      <SecondComponentCls></SecondComponentCls>
+    
+      <FC title="Functional component"> <button>button</button></FC>
+      <FirstComponentCls compName="First Component"></FirstComponentCls>
+      <SecondComponentCls >
+      <button>button</button>
+      </SecondComponentCls>
       <Click/>  
       <Counter/>
       <ParentComp/>
