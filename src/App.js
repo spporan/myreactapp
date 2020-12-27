@@ -1,23 +1,28 @@
+import React, { Component } from 'react';
+import './App.css';
+import NewComp from './state/NewComp'
 
-import FC from './components/FunctionalComp';
-import {FirstComponentCls,SecondComponentCls} from "./components/ComponentClass";
-import  Click  from "./components/click";
-import Counter  from './components/Counter';
-import ParentComp from './components/ParentComp'
-function App() {
-  return (
-    <div className="App">
-    
-      <FC title="Functional component"> <button>button</button></FC>
-      <FirstComponentCls compName="First Component"></FirstComponentCls>
-      <SecondComponentCls >
-      <button>button</button>
-      </SecondComponentCls>
-      <Click/>  
-      <Counter/>
-      <ParentComp/>
-    </div>
-  );
+ class App extends Component {
+
+   styles={
+     fontStyle:"bold",
+     color:"teal",
+     fontSize:"20px"
+   }
+ 
+
+  render() {
+    return (
+      <div className="App">
+        <h1 style={this.styles}>Welcome to <b>REACT</b></h1>
+        <NewComp></NewComp>
+      </div>
+    )
+  }
 }
+
+
+
+
 
 export default App;
